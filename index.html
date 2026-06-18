@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BizBook — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+    color: #1a1a1a; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #121212; } a { color: #6aa9ff; } }
+  h1 { font-size: 1.7rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid rgba(128,128,128,.25); padding-bottom: .3rem; }
+  .updated { color: #888; font-size: .9rem; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: .5rem 0; font-size: .95rem; }
+  th, td { border: 1px solid rgba(128,128,128,.3); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+  code { background: rgba(128,128,128,.15); padding: .1rem .3rem; border-radius: 4px; }
+  ul { padding-left: 1.2rem; }
+</style>
+</head>
+<body>
+<h1>BizBook — Privacy Policy</h1>
+<p class="updated">Last updated: 18 June 2026</p>
+
+<p>BizBook (“the app”, “we”, “us”) is a business-management app — invoicing, point of
+sale, and inventory — published by Dr. Nzozone Henry Fomukong (FieldHealth Africa).
+This policy explains what data the app handles, why, and your choices. Plain language,
+no surprises.</p>
+
+<h2>1. The short version</h2>
+<ul>
+  <li>BizBook is <strong>offline-first</strong>. Your business data lives <strong>on your device</strong> by default.</li>
+  <li>We <strong>do not sell</strong> your data, and the app contains <strong>no advertising</strong>.</li>
+  <li>Cloud features (backup, sync, AI) are <strong>optional</strong> and only run when you create a BizBook Cloud account or use an AI feature.</li>
+  <li>You can <strong>export or permanently delete</strong> all your data from inside the app at any time.</li>
+</ul>
+
+<h2>2. Data the app handles</h2>
+<p><strong>a) Business data you enter.</strong> Products, inventory, batches, sales, invoices,
+estimates, clients, suppliers, expenses, payments, bank/cash balances, and staff records
+you choose to add.</p>
+<p><strong>b) Account data (only if you enable Cloud).</strong> Your email address and an
+encrypted password, handled by our authentication provider (Supabase) to sign you in and
+sync your data. We never store your password in readable form.</p>
+<p><strong>c) Images you submit to AI features (only if you use them).</strong> When you use
+Scan-to-Inventory or Invoice/Receipt OCR, the photo is sent — through our secure backend
+proxy — to our AI provider (Anthropic) to extract text and product details. Natural-language
+report questions are sent the same way. Images and queries are used <strong>only</strong> to
+return your result; they are <strong>not</strong> used to train AI models.</p>
+<p><strong>d) Technical/diagnostic data.</strong> Basic crash and error information to keep
+the app stable. No advertising identifiers are collected.</p>
+<p>We do <strong>not</strong> collect contacts, precise location, health/clinical records, or
+browsing history. BizBook is a business-operations tool, not a health-records system.</p>
+
+<h2>3. Why we use it</h2>
+<table>
+  <tr><th>Purpose</th><th>Data used</th></tr>
+  <tr><td>Run the app's core features on your device</td><td>Business data (a)</td></tr>
+  <tr><td>Cloud backup &amp; multi-device sync (optional)</td><td>Business data (a), account (b)</td></tr>
+  <tr><td>Sign-in and account security</td><td>Account (b)</td></tr>
+  <tr><td>AI data entry &amp; reports (optional, metered)</td><td>Images/queries (c)</td></tr>
+  <tr><td>App stability</td><td>Diagnostics (d)</td></tr>
+  <tr><td>Process subscriptions &amp; purchases</td><td>Handled entirely by Google Play Billing — we never receive your card details</td></tr>
+</table>
+
+<h2>4. Where your data is stored</h2>
+<ul>
+  <li><strong>On your device</strong> (encrypted local database) — always.</li>
+  <li><strong>In the cloud (Supabase)</strong> — only when you sign in to BizBook Cloud and sync. Encrypted in transit (HTTPS/TLS); protected by per-account access controls.</li>
+  <li><strong>AI provider (Anthropic)</strong> — receives only the specific image or question for a single request, via our proxy; not retained for training.</li>
+</ul>
+
+<h2>5. Sharing</h2>
+<p>We share data only with the service providers needed to run the features you use:
+<strong>Supabase</strong> (cloud auth/database/storage, only if you enable Cloud),
+<strong>Anthropic</strong> (AI processing, only when you use an AI feature), and
+<strong>Google Play</strong> (payment processing). We do <strong>not</strong> sell your data,
+share it with advertisers, or use it for advertising.</p>
+
+<h2>6. Your choices and rights</h2>
+<ul>
+  <li><strong>Stay local:</strong> use BizBook entirely offline without a Cloud account — your data never leaves your device.</li>
+  <li><strong>Export:</strong> Settings → Export Data (CSV).</li>
+  <li><strong>Delete:</strong> Settings → Delete Account permanently removes all local data and signs you out; cloud data (if any) is removed on the next sync. This cannot be undone.</li>
+  <li><strong>Skip AI:</strong> every AI feature is optional and has a manual alternative.</li>
+</ul>
+
+<h2>7. Data retention</h2>
+<p>Local data is kept until you delete it or uninstall the app. Cloud data is kept while your
+account is active and removed when you delete your account.</p>
+
+<h2>8. Children</h2>
+<p>BizBook is intended for business owners and staff. It is not directed to children and we do
+not knowingly collect data from children.</p>
+
+<h2>9. Changes</h2>
+<p>We may update this policy; material changes will be reflected by the “Last updated” date
+above and, where appropriate, noted in the app.</p>
+
+<h2>10. Contact</h2>
+<p>Questions or data requests: <a href="mailto:hnzozone91.nh@gmail.com">hnzozone91.nh@gmail.com</a></p>
+</body>
+</html>
