@@ -23,7 +23,7 @@
 </head>
 <body>
 <h1>BizBook — Privacy Policy</h1>
-<p class="updated">Last updated: 18 June 2026</p>
+<p class="updated">Last updated: 4 July 2026</p>
 
 <p>BizBook (“the app”, “we”, “us”) is a business-management app — invoicing, point of
 sale, and inventory — published by Dr. Nzozone Henry Fomukong.
@@ -44,7 +44,14 @@ estimates, clients, suppliers, expenses, payments, bank/cash balances, and staff
 you choose to add.</p>
 <p><strong>b) Account data (only if you enable Cloud).</strong> Your email address and an
 encrypted password, handled by our authentication provider (Supabase) to sign you in and
-sync your data. We never store your password in readable form.</p>
+sync your data. We never store your password in readable form. Account emails — sign-up
+verification codes and password-reset codes — are delivered through our email service
+provider (Brevo), which processes your email address solely to deliver those messages.</p>
+<p><strong>b2) Voice input (only if you use voice entry).</strong> If you use the optional
+voice-entry feature to dictate a sale or expense, your speech is converted to text using your
+device's speech-recognition service (which may be provided by Google on Android). We receive
+only the resulting text, which you review before anything is saved. The microphone is used
+only while you actively hold the record button.</p>
 <p><strong>c) Images you submit to AI features (only if you use them).</strong> When you use
 Scan-to-Inventory or Invoice/Receipt OCR, the photo is sent — through our secure backend
 proxy — to our AI provider (Anthropic) to extract text and product details. Natural-language
@@ -54,6 +61,21 @@ return your result; they are <strong>not</strong> used to train AI models.</p>
 the app stable. No advertising identifiers are collected.</p>
 <p>We do <strong>not</strong> collect contacts, precise location, health/clinical records, or
 browsing history. BizBook is a business-operations tool, not a health-records system.</p>
+
+<p><strong>Device permissions the app may request, and why:</strong></p>
+<ul>
+  <li><strong>Camera</strong> — scanning product barcodes / QR attendance codes (processed
+  on-device, nothing uploaded) and photographing products or supplier invoices for the
+  optional AI features (uploaded only when you confirm).</li>
+  <li><strong>Microphone</strong> — optional voice entry only (see b2). Never recorded in
+  the background.</li>
+  <li><strong>Bluetooth / Nearby devices</strong> — connecting to a Bluetooth receipt
+  printer you choose. Receipt data goes only to that printer; nothing else is discovered
+  or contacted.</li>
+  <li><strong>Notifications</strong> — local reminders you configure (low stock, expiring
+  batches, invoice due dates). Generated on-device.</li>
+</ul>
+<p>Every permission is optional: denying it disables only the matching feature.</p>
 
 <h2>3. Why we use it</h2>
 <table>
@@ -76,14 +98,17 @@ browsing history. BizBook is a business-operations tool, not a health-records sy
 <h2>5. Sharing</h2>
 <p>We share data only with the service providers needed to run the features you use:
 <strong>Supabase</strong> (cloud auth/database/storage, only if you enable Cloud),
-<strong>Anthropic</strong> (AI processing, only when you use an AI feature), and
-<strong>Google Play</strong> (payment processing). We do <strong>not</strong> sell your data,
-share it with advertisers, or use it for advertising.</p>
+<strong>Brevo</strong> (delivery of account emails — verification and password-reset codes —
+only if you enable Cloud), <strong>Anthropic</strong> (AI processing, only when you use an AI
+feature), <strong>Google Play</strong> (payment processing), and <strong>your device's
+speech-recognition service</strong> (voice-to-text, only when you use voice entry). We do
+<strong>not</strong> sell your data, share it with advertisers, or use it for advertising.</p>
 
 <h2>6. Your choices and rights</h2>
 <ul>
   <li><strong>Stay local:</strong> use BizBook entirely offline without a Cloud account — your data never leaves your device.</li>
-  <li><strong>Export:</strong> Settings → Export Data (CSV).</li>
+  <li><strong>Export:</strong> Settings → Export Data (CSV), and Settings → Backup for a
+  complete one-tap backup (ZIP of every table) you can keep anywhere — free on every plan.</li>
   <li><strong>Delete:</strong> Settings → Delete Account permanently removes all local data and signs you out; cloud data (if any) is removed on the next sync. This cannot be undone.</li>
   <li><strong>Skip AI:</strong> every AI feature is optional and has a manual alternative.</li>
 </ul>
