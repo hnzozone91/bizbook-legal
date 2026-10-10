@@ -24,7 +24,7 @@
 </head>
 <body>
 <h1>BizBook — Privacy Policy</h1>
-<p class="updated">Last updated: 26 September 2026</p>
+<p class="updated">Last updated: 10 October 2026</p>
 <p>BizBook ("the app", "we", "us") is a business-management app for invoicing, point of
 sale, and inventory. It is published by Bery Health and Supplies LLC, a Wyoming limited
 liability company trading as FieldHealth Africa, of 30 N Gould St Ste N, Sheridan,
@@ -47,11 +47,16 @@ no surprises.</p>
 <h2>2. The short version</h2>
 <ul>
 <li>BizBook is <strong>offline-first</strong>. Your business data lives <strong>on your device</strong> by default.</li>
-<li>We <strong>do not sell</strong> your data, and the app contains <strong>no advertising</strong>.</li>
+<li>We <strong>do not sell</strong> your data. Products, prices, customers, and invoice lines are not
+  sent to an advertising network.</li>
+<li>The app can show one banner on the home screen of a free account, and only after we
+  enable it. Where Google requires a choice, you are asked first. It is not on the till,
+  and it is not shown during a paid plan or a trial. The ad request does not include
+  shop records, and it asks for a non-personalized ad.</li>
 <li>Cloud features (backup, sync, multi-device, AI) are <strong>optional</strong> and only run when you
   create a BizBook account or use an AI feature.</li>
-<li>Crash reporting and usage analytics are <strong>both off until you say yes</strong>, and both can be
-  switched off again at any time.</li>
+<li>Crash reporting, usage analytics, and advertising measurement are <strong>off until you say
+  yes</strong>. Each one can be switched off again.</li>
 <li>You can <strong>export or permanently delete</strong> all your data from inside the app at any time.</li>
 </ul>
 <h2>3. Data the app handles</h2>
@@ -75,16 +80,15 @@ form.</p>
   it on Google Play, and the date of the last ask. That is a count and a date, nothing
   else. It stops a reinstall from asking you again, and it is deleted with your account.</li>
 </ul>
-<p><strong>c) Your email address for the user manual (optional).</strong> The last step of setup asks,
-separately and optionally, for an address to send you the BizBook user manual. This is
-<strong>not</strong> the business email printed on your invoices; leaving it blank skips it entirely,
-and there is no pre-ticked box anywhere in that flow. If you provide it, we store it on
-your device and send it to our Supabase project together with the language you chose,
-your business type, the app version, and a short installation tag used to limit abuse of
-the form. <strong>No business data of any kind is sent with it:</strong> no sales, no products, no
-customers, no figures. We use the address only to send you the manual and occasional
-important notices about the app, and we never share, sell, or rent it. To be removed,
-email us at the address in section 11.</p>
+<p><strong>c) The user manual, sent to a verified account email.</strong> If you create an account and
+verify the email, we send the BizBook manual to that address. The sign-up screen says
+so before you continue, including when you use "Continue with Google". This is not the
+business email printed on your invoices. With the address we store the language you
+chose, your business type, the app version, and a short installation tag used to limit
+abuse. <strong>No business data is sent with it:</strong> no sales, no products, no customers, no
+figures. News and promotional email are a separate checkbox, and that box starts
+unticked. We do not sell or rent the address. Delete the account, or email us, to be
+removed.</p>
 <p><strong>d) Voice input (only if you use voice entry).</strong> If you use the optional voice-entry
 feature to dictate a sale or expense, your speech is converted to text using your
 device's speech-recognition service (which may be provided by Google on Android). We
@@ -108,7 +112,27 @@ immediately and deletes anything still queued.</p>
 of a few setup milestones — opening the app, finishing setup, making a first sale — with
 the app version and how long the step took. Nothing else. No amounts, no product or
 customer names, no free text; the table that stores it has no column that could hold
-them. It goes to our own Supabase project, not to an advertising network.</p>
+them. It goes to our own Supabase project. Those records are not sent to an advertising
+network unless you also turn on advertising measurement (h).</p>
+<p><strong>h) Advertising measurement (optional, off until you turn it on).</strong> This switch does
+nothing unless usage analytics is already on. If you turn it on, we may send the names
+of app milestones (first open, registration, finished setup, first sale, first invoice,
+activation, a plan offer being viewed, checkout started, a verified subscription, a
+review request, and ad revenue), an app instance id, and the Play install referrer to
+Google and OpenAI so we can measure our own advertising. The referrer says which store
+listing or campaign led to the install. It is not your shop's books. Personalized
+advertising is a further switch, also off, and it only lets those partners use the
+measurement events for personalized ads. It does not change the banner request in (i).
+Turning advertising measurement off stops new sharing and clears the campaign
+identifiers we still hold. A request that has already been sent cannot be recalled.</p>
+<p><strong>i) Advertising ID and a home-screen banner.</strong> The app includes Google Mobile Ads. The
+Android advertising ID is used only when a banner is requested, or when advertising
+measurement (h) is on. One banner can appear on the
+home screen of a free account. It does not appear on the till, and it does not appear
+during a paid plan or a trial. We do not show it unless we have enabled it. The request
+asks Google for a non-personalized ad and does not include products, prices, customers,
+invoice lines, or sale amounts. Where Google requires a consent form, that form is
+shown first.</p>
 <p>We do <strong>not</strong> collect contacts, precise location, health or clinical records, or browsing
 history. BizBook is a business-operations tool, not a health-records system.</p>
 <p><strong>Device permissions the app may request, and why:</strong></p>
@@ -145,8 +169,8 @@ history. BizBook is a business-operations tool, not a health-records system.</p>
 <td>Account (b)</td>
 </tr>
 <tr>
-<td>Sending you the user manual you asked for</td>
-<td>Manual email (c)</td>
+<td>Sending the user manual to a verified account</td>
+<td>Account email (c)</td>
 </tr>
 <tr>
 <td>AI data entry and reports (optional, metered)</td>
@@ -159,6 +183,14 @@ history. BizBook is a business-operations tool, not a health-records system.</p>
 <tr>
 <td>Understanding where new users get stuck</td>
 <td>Usage analytics (g)</td>
+</tr>
+<tr>
+<td>Measuring our own advertising, only if you allow it</td>
+<td>Milestone names, app instance id, install referrer (h)</td>
+</tr>
+<tr>
+<td>A home-screen banner on a free account, only if we enable it</td>
+<td>Advertising ID (i). No shop records</td>
 </tr>
 <tr>
 <td>Subscriptions and credit purchases</td>
@@ -202,16 +234,19 @@ operate a payment system; licensed processors handle the money.</p>
 <li><strong>Supabase</strong> — cloud authentication, database, and storage (only if you create an
   account), and the store for the manual-email list and opt-in analytics.</li>
 <li><strong>Google</strong> — sign-in, if you choose "Continue with Google" (b); crash reporting through
-  Firebase Crashlytics, if you agree to it (f); and payment processing where Play Billing
-  is used (section 6).</li>
+  Firebase Crashlytics, if you agree to it (f); payment processing where Play Billing
+  is used (section 6); and, if you turn on advertising measurement (h) or we show the
+  home-screen banner (i), Google Ads, AdMob, and Firebase Analytics for that measurement.</li>
+<li><strong>OpenAI</strong> — milestone names and campaign identifiers, only if you turn on advertising
+  measurement (h). Not your shop records, and not the photos sent to Anthropic.</li>
 <li><strong>Brevo</strong> — delivery of account emails and the user manual to your email address.</li>
 <li><strong>Anthropic</strong> — AI text and vision processing, only when you use an AI feature.</li>
 <li><strong>CamPay</strong> — mobile-money payment processing for purchases made on our website.</li>
 <li><strong>Your device's speech-recognition service</strong> — voice-to-text conversion, only when you
   use voice entry.</li>
 </ul>
-<p>We do <strong>not</strong> sell your data, share it with advertisers or data brokers, or use it for
-advertising.</p>
+<p>We do <strong>not</strong> sell your data or share it with data brokers. Shop records are not sent
+to advertisers. Advertising measurement is sent only after you turn that switch on.</p>
 <h2>8. Your choices and rights</h2>
 <ul>
 <li><strong>Stay local:</strong> use BizBook entirely offline without an account. Your data never leaves
@@ -225,15 +260,20 @@ advertising.</p>
   cancels the request. The local deletion cannot be undone. If you no
   longer have the app, request deletion at
   <a href="https://hnzozone91.github.io/bizbook-legal/delete-account.html">hnzozone91.github.io/bizbook-legal/delete-account.html</a>.</li>
-<li><strong>Withdraw consent:</strong> Settings → App turns crash reporting and analytics off again
-  at any time, effective immediately.</li>
+<li><strong>Withdraw consent:</strong> Settings → App turns crash reporting, analytics, advertising
+  measurement, and personalized advertising off again. New collection stops immediately.
+  A measurement event already sent to Google or OpenAI cannot be recalled.</li>
 <li><strong>Skip AI:</strong> every AI feature is optional and has a manual alternative.</li>
-<li><strong>Leave the manual mailing list:</strong> email us and we will delete your address.</li>
+<li><strong>Leave the manual mailing list:</strong> delete the account, or email us and we will delete
+  the address. Promotional email stops when you untick that box.</li>
 </ul>
 <h2>9. Data retention</h2>
 <p>Local data is kept until you delete it or uninstall the app. Cloud data is kept while
-your account is active, and deleted 90 days after you ask to delete your account. Manual-email addresses
-are kept until you ask us to remove them.</p>
+your account is active, and deleted 90 days after you ask to delete your account.
+Signing in again during those 90 days cancels the deletion. The manual-list address
+and the campaign-measurement events tied to the account are deleted with it. An event
+already delivered to Google or OpenAI cannot be recalled. Deleting the account does
+not cancel a Google Play subscription. Cancel that in the Play Store.</p>
 <h2>10. Children</h2>
 <p>BizBook is intended for business owners and staff. It is not directed to children and we
 do not knowingly collect data from children.</p>
@@ -242,8 +282,11 @@ do not knowingly collect data from children.</p>
 above and, where appropriate, noted in the app.</p>
 <p>In September 2026 BizBook moved to the FieldHealth Africa organisation developer account
 on Google Play, which is registered to Bery Health and Supplies LLC. The company
-responsible for your data did not change, and neither did what we collect or who we share
-it with.</p>
+responsible for your data did not change.</p>
+<p>In October 2026 the user manual is sent to a verified account email, and the app can
+measure advertising and show one home-screen banner on a free account. Both stay off
+until you allow measurement, and the banner also stays off until we enable it. Shop
+records are not part of either.</p>
 <p>Questions or data requests: <strong><a href="mailto:hello@fieldhealthafrica.org">hello@fieldhealthafrica.org</a></strong>.</p>
 <p>Bery Health and Supplies LLC (trading as FieldHealth Africa)
 30 N Gould St Ste N, Sheridan, WY 82801, United States
